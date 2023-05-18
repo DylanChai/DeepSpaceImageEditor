@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.deepspace.HelloController">
+    <children>
+        <Button fx:id="fileButton" layoutX="25.0" layoutY="57.0" mnemonicParsing="false" onAction="#fileButton" text="AddSpace" />
+        <MenuBar layoutY="2.0">
+            <menus>
+                <Menu mnemonicParsing="false" text="File">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Close" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Edit">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Delete" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="About" />
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+
+        <ImageView fx:id="Image1" fitHeight="231.0" fitWidth="240.0" layoutX="95.0" layoutY="57.0" pickOnBounds="true" preserveRatio="true" />
+        <ImageView fx:id="Image2" fitHeight="231.0" fitWidth="240.0" layoutX="357.0" layoutY="57.0" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="objectFinderButton" layoutX="25.0" layoutY="121.0" mnemonicParsing="false" text="CelestialObjectFinder" />
+      <TextField fx:id="Luminance" layoutX="15.0" layoutY="172.0" />
+      <Button fx:id="UpdateLuminanceButton" layoutX="33.0" layoutY="200.0" mnemonicParsing="false" onAction="#UpdateLuminance" text="UpdateLuminance" />
+      <TextField fx:id="FiltherByPixel" layoutX="15.0" layoutY="240.0" />
+      <Button fx:id="Filther" layoutX="33.0" layoutY="266.0" mnemonicParsing="false"  text="FiltherByPixel" />
+    </children>
+</AnchorPane>
